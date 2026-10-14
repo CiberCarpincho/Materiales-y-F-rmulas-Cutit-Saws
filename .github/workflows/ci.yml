@@ -1,0 +1,9 @@
+# Esqueleto pendiente: agregar instalación, lint, análisis de tipos y pruebas al definir las herramientas del equipo.
+name: ci
+on:
+  workflow_dispatch:
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Definir pipeline de calidad y despliegue para Cutit"

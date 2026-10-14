@@ -1,0 +1,9 @@
+from typing import Protocol
+
+from app.domain.entities.material import Material
+
+
+class MaterialRepository(Protocol):
+    def get_by_id(self, material_id: str) -> Material | None: ...
+    def get_by_normalized_name(self, name: str) -> Material | None: ...
+    def save(self, material: Material) -> Material: ...
